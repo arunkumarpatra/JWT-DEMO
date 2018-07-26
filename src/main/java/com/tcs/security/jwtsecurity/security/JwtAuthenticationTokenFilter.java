@@ -1,6 +1,6 @@
-package com.techprimers.security.jwtsecurity.security;
+package com.tcs.security.jwtsecurity.security;
 
-import com.techprimers.security.jwtsecurity.model.JwtAuthenticationToken;
+import com.tcs.security.jwtsecurity.model.JwtAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter;

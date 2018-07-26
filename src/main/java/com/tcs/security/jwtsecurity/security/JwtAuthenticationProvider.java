@@ -1,8 +1,8 @@
-package com.techprimers.security.jwtsecurity.security;
+package com.tcs.security.jwtsecurity.security;
 
-import com.techprimers.security.jwtsecurity.model.JwtAuthenticationToken;
-import com.techprimers.security.jwtsecurity.model.JwtUser;
-import com.techprimers.security.jwtsecurity.model.JwtUserDetails;
+import com.tcs.security.jwtsecurity.model.JwtAuthenticationToken;
+import com.tcs.security.jwtsecurity.model.JwtUser;
+import com.tcs.security.jwtsecurity.model.JwtUserDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider;

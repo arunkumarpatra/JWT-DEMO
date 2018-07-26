@@ -1,4 +1,4 @@
-package com.techprimers.security.jwtsecurity.model;
+package com.tcs.security.jwtsecurity.model;
 
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 
