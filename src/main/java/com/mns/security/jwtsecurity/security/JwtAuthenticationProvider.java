@@ -1,8 +1,5 @@
-package com.tcs.security.jwtsecurity.security;
+package com.mns.security.jwtsecurity.security;
 
-import com.tcs.security.jwtsecurity.model.JwtAuthenticationToken;
-import com.tcs.security.jwtsecurity.model.JwtUser;
-import com.tcs.security.jwtsecurity.model.JwtUserDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider;
@@ -11,6 +8,10 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
+
+import com.mns.security.jwtsecurity.model.JwtAuthenticationToken;
+import com.mns.security.jwtsecurity.model.JwtUser;
+import com.mns.security.jwtsecurity.model.JwtUserDetails;
 
 import java.util.List;
 

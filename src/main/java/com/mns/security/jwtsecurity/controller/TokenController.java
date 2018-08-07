@@ -1,7 +1,8 @@
-package com.tcs.security.jwtsecurity.controller;
+package com.mns.security.jwtsecurity.controller;
 
-import com.tcs.security.jwtsecurity.model.JwtUser;
-import com.tcs.security.jwtsecurity.security.JwtGenerator;
+import com.mns.security.jwtsecurity.model.JwtUser;
+import com.mns.security.jwtsecurity.security.JwtGenerator;
+
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

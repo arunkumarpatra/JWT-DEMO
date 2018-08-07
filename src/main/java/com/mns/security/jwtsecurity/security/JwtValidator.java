@@ -1,9 +1,10 @@
-package com.tcs.security.jwtsecurity.security;
+package com.mns.security.jwtsecurity.security;
 
-import com.tcs.security.jwtsecurity.model.JwtUser;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import org.springframework.stereotype.Component;
+
+import com.mns.security.jwtsecurity.model.JwtUser;
 
 @Component
 public class JwtValidator {

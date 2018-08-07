@@ -1,9 +1,5 @@
-package com.tcs.security.jwtsecurity.config;
+package com.mns.security.jwtsecurity.config;
 
-import com.tcs.security.jwtsecurity.security.JwtAuthenticationEntryPoint;
-import com.tcs.security.jwtsecurity.security.JwtAuthenticationProvider;
-import com.tcs.security.jwtsecurity.security.JwtAuthenticationTokenFilter;
-import com.tcs.security.jwtsecurity.security.JwtSuccessHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,6 +11,11 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+
+import com.mns.security.jwtsecurity.security.JwtAuthenticationEntryPoint;
+import com.mns.security.jwtsecurity.security.JwtAuthenticationProvider;
+import com.mns.security.jwtsecurity.security.JwtAuthenticationTokenFilter;
+import com.mns.security.jwtsecurity.security.JwtSuccessHandler;
 
 import java.util.Collections;
 
@@ -47,8 +48,8 @@ public class JwtSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
 
         http.csrf().disable()
-                .authorizeRequests().antMatchers("**/rest/**").authenticated()
-                .and()
+       //         .authorizeRequests().antMatchers("**/rest/**").authenticated()
+       //         .and()
                 .exceptionHandling().authenticationEntryPoint(entryPoint)
                 .and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);

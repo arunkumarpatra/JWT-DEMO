@@ -1,4 +1,4 @@
-package com.tcs.security.jwtsecurity.model;
+package com.mns.security.jwtsecurity.model;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -8,7 +8,8 @@ import java.util.List;
 
 public class JwtUserDetails implements UserDetails {
 
-    private String userName;
+ 
+	private String userName;
     private String token;
     private Long id;
     private Collection<? extends GrantedAuthority> authorities;
